@@ -1,0 +1,95 @@
+extends layout
+
+block content
+	div.jumbotron
+		h1 Hi. Let's find you a new celebrity friend..
+		hr
+		div.container
+			button(data-toggle="collapse" data-target="#form-panel").btn.bt-lg.btn-success Click to start the form
+	div.container-fluid
+		div.panel.collapse#form-panel
+			form(action="/submit" method="POST")
+				div.container
+					label(for="question1") How much do you use 4chan?
+					select(name="name").form-control#question1
+						option(value=1) 1-Not At All
+						option(value=2) 2
+						option(value=3 selected) 3 - Some
+						option(value=4) 4
+						option(value=5) 5-A Lot
+				div.container
+					label(for="question2") How much do you use reddit?
+					select(name="name").form-control#question2
+						option(value=1) 1-Not At All
+						option(value=2) 2
+						option(value=3 selected) 3 - Some
+						option(value=4) 4
+						option(value=5) 5-A Lot
+				div.container
+					label(for="question3") How much do you use twitter?
+					select(name="name").form-control#question3
+						option(value=1) 1-Not At All
+						option(value=2) 2
+						option(value=3 selected) 3 - Some
+						option(value=4) 4
+						option(value=5) 5-A Lot
+				div.container
+					label(for="question4") How much do you use facebook?
+					select(name="name").form-control#question4
+						option(value=1) 1-Not At All
+						option(value=2) 2
+						option(value=3 selected) 3 - Some
+						option(value=4) 4
+						option(value=5) 5-A Lot
+				div.container
+					label(for="question5") How much do you use pinterest?
+					select(name="name").form-control#question5
+						option(value=1) 1-Not At All
+						option(value=2) 2
+						option(value=3 selected) 3 - Some
+						option(value=4) 4
+						option(value=5) 5-A Lot
+				div.container
+					label(for="question6") How much do you use twitter?
+					select(name="name").form-control#question6
+						option(value=1) 1-Not At All
+						option(value=2) 2
+						option(value=3 selected) 3 - Some
+						option(value=4) 4
+						option(value=5) 5-A Lot
+				div.container
+					label(for="question7") How much do you use github?
+					select(name="name").form-control#question7
+						option(value=1) 1-Not At All
+						option(value=2) 2
+						option(value=3 selected) 3 - Some
+						option(value=4) 4
+						option(value=5) 5-A Lot
+				div.container
+					label(for="question8") How much do you use Stack Overflow?
+					select(name="name").form-control#question8
+						option(value=1) 1-Not At All
+						option(value=2) 2
+						option(value=3 selected) 3 - Some
+						option(value=4) 4
+						option(value=5) 5-A Lot
+				div.container
+					label(for="question9") How much do you shop on Amazon?
+					select(name="name").form-control#question9
+						option(value=1) 1-Not At All
+						option(value=2) 2
+						option(value=3 selected) 3 - Some
+						option(value=4) 4
+						option(value=5) 5-A Lot
+				div.container
+					label(for="question10") How much do you shop on Amazon?
+					select(name="name").form-control#question10
+						option(value=1) 1-Not At All
+						option(value=2) 2
+						option(value=3 selected) 3 - Some
+						option(value=4) 4
+						option(value=5) 5-A Lot
+				div.container
+					button(type="submit").btn.btn-primary.btn-lg#form-submit Submit
+					button(type="reset").btn.btn-warning.btn-lg#form-reset Reset
+	
